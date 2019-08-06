@@ -5,6 +5,7 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
+import DriverCard from './components/DriverCard';
 
 
 class App extends Component {
@@ -51,6 +52,9 @@ class App extends Component {
         <Rating>3</Rating>
         <Rating>4</Rating>
         <Rating>5</Rating>
+        <h1>DriverCard</h1>
+        <DriverCard />
+ 
       </div>
     );
   }
