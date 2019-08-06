@@ -7,6 +7,8 @@ import CreditCard from './data/components/CreditCard';
 import Rating from './data/components/Rating';
 import DriverCard from './data/components/DriverCard';
 import LikeButton from './data/components/LikeButton';
+import ClickablePicture from './data/components/ClickablePicture';
+import Dice from './data/components/Dice';
 
 
 class App extends Component {
@@ -101,6 +103,14 @@ class App extends Component {
 
           <h1>Like buttons</h1>
           <LikeButton /> <LikeButton />
+
+          <h1>Clickable Picture</h1>
+          <ClickablePicture
+            img="/img/persons/maxence.png"
+            imgClicked="/img/persons/maxence-glasses.png" />
+
+          <h1>Dice</h1>
+          <Dice />
       </div>
 
       
