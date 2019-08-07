@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 2rem 3.5rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -9,6 +9,59 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+p {
+  margin: 0;
+}
+
+.challenge {
+  margin: 3.5rem 0;
+}
+
+.card-container,
+.card-info {
+  display: flex;
+}
+
+.card-info {
+  flex-flow: column nowrap;
+  justify-content: center;
+  line-height: 1.8;
+  padding: 0 1.5rem;
+}
+
+.card-image {
+  width: 10rem;
+  height: 10rem;
+}
+
+.boxed-text {
+  padding: 1.5rem;
+  border: 1px solid #fabada;
+}
+
+.boxed-text {
+  margin-bottom: .5rem;
+}
+
+.boxes-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.credit-cards {
+  display: flex;
+}
+
+.cc-container {
+  display: flex;
+  padding: 2rem;
+}
+
+.cc-brand {
+  width: 3.5rem;
+  height: auto;
+  align-self: flex-end;
 }

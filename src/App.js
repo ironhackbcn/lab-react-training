@@ -9,61 +9,73 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h2>IdCard</h2>
-        <IdCard
-          lastName='Delores '
-          firstName='Obrien'
-          gender='female'
-          height={172}
-          birth={new Date("1988-05-11")}
-          picture="https://randomuser.me/api/portraits/women/44.jpg" />
+        <section className="challenge">
+          <h2>IdCard</h2>
+          <IdCard
+            lastName='Delores '
+            firstName='Obrien'
+            gender='female'
+            height={172}
+            birth={new Date("1988-05-11")}
+            picture="https://randomuser.me/api/portraits/women/44.jpg" />
+        </section>
 
-        <h2>Greetings</h2>
-        <Greetings lang='de'>
-          Ludwig
-        </Greetings>
+        <section className="challenge">
+          <h2>Greetings</h2>
+          <Greetings lang='de'>
+            <p className="boxed-text">Hallo Ludwig</p>
+          </Greetings>
+        </section>
 
-        <h2>Random</h2>
-        <Random min={1} max={6} />
-        <Random min={1} max={100} />
+        <section className="challenge">
+          <h2>Random</h2>
+          <p className="boxed-text"><Random min={1} max={6} /></p>
+          <p className="boxed-text"><Random min={1} max={100} /></p>
+        </section>
 
-        <h2>Box Color</h2>
-        <BoxColor r={255} g={0} b={0} />
-        <BoxColor r={128} g={255} b={0} />
+        <section className="challenge">
+          <h2>Box Color</h2>
+          <div className="boxes-container">
+            <BoxColor r={255} g={0} b={0} />
+            <BoxColor r={128} g={255} b={0} />
+          </div>
+        </section>
 
-        <h2>Credit Card</h2>
-        <div className="card-items">
-          <CreditCard
-            type="Visa"
-            number="0123456789018845"
-            expirationMonth={3}
-            expirationYear={2021}
-            bank="BNP"
-            owner="Maxence Bouret"
-            bgColor="#11aa99"
-            color="white"
-          />
-          <CreditCard
-            type="Master Card"
-            number="0123456789010995"
-            expirationMonth={3}
-            expirationYear={2021}
-            bank="N26"
-            owner="Maxence Bouret"
-            bgColor="#eeeeee"
-            color="#222222"
-          />
-          <CreditCard
-            type="Visa"
-            number="0123456789016984"
-            expirationMonth={12}
-            expirationYear={2019}
-            bank="Name of the Bank"
-            owner="Firstname Lastname"
-            bgColor="#ddbb55"
-            color="white"
-          />
-        </div>
+        <section className="challenge">
+          <h2>Credit Card</h2>
+          <div className="credit-cards">
+            <CreditCard
+              type="Visa"
+              number="0123456789018845"
+              expirationMonth={3}
+              expirationYear={2021}
+              bank="BNP"
+              owner="Maxence Bouret"
+              bgColor="#11aa99"
+              color="white"
+            />
+            <CreditCard
+              type="Master Card"
+              number="0123456789010995"
+              expirationMonth={3}
+              expirationYear={2021}
+              bank="N26"
+              owner="Maxence Bouret"
+              bgColor="#eeeeee"
+              color="#222222"
+            />
+            <CreditCard
+              type="Visa"
+              number="0123456789016984"
+              expirationMonth={12}
+              expirationYear={2019}
+              bank="Name of the Bank"
+              owner="Firstname Lastname"
+              bgColor="#ddbb55"
+              color="white"
+            />
+          </div>
+        </section>
       </div>
     );
   }

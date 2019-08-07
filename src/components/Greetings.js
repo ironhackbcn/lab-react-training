@@ -5,7 +5,7 @@ class Greetings extends Component {
     const { lang, children } = this.props
     return (
       <>
-        <div lang={lang}>Hallo {children}</div>
+        <div lang={lang}>{children}</div>
       </>
     )
   }

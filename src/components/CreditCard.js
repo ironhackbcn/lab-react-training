@@ -15,14 +15,14 @@ function CreditCard(props) {
   }
 
   return (
-    <div style={divStyle} className="card-container" >
-      <img src={cardType} alt={props.type}></img>
-      < p className="card-number" > {maskNumber(props.number)}</p>
-      <div className="card-info">
-        <p className="card-expiration">Expires: {props.expirationMonth} / {props.expirationYear}</p>
-        <p className="card-bank">{props.bank}</p>
+    <div style={divStyle} className="cc-container" >
+      <img className="cc-brand" src={cardType} alt={props.type}></img>
+      <p className="cc-number" > {maskNumber(props.number)}</p>
+      <div className="cc-info">
+        <p className="cc-expiration">Expires: {props.expirationMonth} / {props.expirationYear}</p>
+        <p className="cc-bank">{props.bank}</p>
       </div>
-      <p className="card-owner">{props.owner}</p>
+      <p className="cc-owner">{props.owner}</p>
     </div >
   )
 }

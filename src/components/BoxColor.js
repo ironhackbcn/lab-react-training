@@ -8,7 +8,9 @@ function BoxColor(props) {
     backgroundColor: colorString,
     //backgroundColor: 'rgb(' + r + ',' + g + ',' + b + ')',
     height: '10rem',
-    width: '10rem'
+    width: '10rem',
+    padding: '2rem',
+    textAlign: 'center'
   }
   return (
     <div style={divStyle}>
