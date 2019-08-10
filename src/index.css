@@ -203,7 +203,23 @@ p {
   }
 }
 
-
 .driver-car {
   margin: .5rem 0 0 0;
+}
+
+.buttons-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.button-counter {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #000;
+  background-color: #fabada;
+  border: 2px solid #000;
+  border-radius: 1.5rem;
+  padding: .5rem 1rem;
+  margin: 0 1rem 0 0;
 }
