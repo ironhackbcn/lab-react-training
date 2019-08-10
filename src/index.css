@@ -16,12 +16,12 @@ p {
 }
 
 .challenge {
-  width: 100%;
-  padding: 3.5rem 1.5rem 0 1.5rem;
+  padding: 3.5rem 1rem 0 1rem;
 }
 
 @media (min-width: 768px) {
   .challenge {
+    width: 100%;
     padding: 4.5rem 3.5rem 0 3.5rem;
   }
 }
@@ -33,7 +33,7 @@ p {
 }
 
 .card-container {
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   width: 100%;
 }
 
@@ -120,15 +120,33 @@ p {
 }
 
 .cc-number {
-  font-size: 1.65rem;
+  font-size: 1.45rem;
   font-weight: 600;
   padding: 1.5rem 0;
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .cc-number {
+    font-size: 1.65rem;
+  }
+}
+
 .cc-info {
   display: flex;
   width: 100%;
+}
+
+.cc-info, 
+.cc-owner {
+  font-size: .875rem;
+}
+
+@media (min-width: 768px) {
+  .cc-info,
+  .cc-owner {
+    font-size: 1rem;
+  }
 }
 
 .cc-expiration {
