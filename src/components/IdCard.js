@@ -8,11 +8,11 @@ class IdCard extends Component {
       <div className="card-container">
         <img className="card-image" src={picture} alt="a profile" />
         <div className="card-info">
-          <p>{firstName}</p>
-          <p>{lastName}</p>
-          <p>{gender}</p>
-          <p>{height}</p>
-          <p>{birthDate}</p>
+          <p><span className="card-label">First Name:</span>{firstName}</p>
+          <p><span className="card-label">Last Name:</span>{lastName}</p>
+          <p><span className="card-label">Gender:</span>{gender}</p>
+          <p><span className="card-label">Height:</span>{height}</p>
+          <p><span className="card-label">Birth:</span>{birthDate}</p>
         </div>
       </div>
     )

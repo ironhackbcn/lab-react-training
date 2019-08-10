@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding: 2rem 3.5rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -17,24 +16,65 @@ p {
 }
 
 .challenge {
-  margin: 3.5rem 0;
+  width: 100%;
+  padding: 3.5rem 1.5rem 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .challenge {
+    padding: 4.5rem 3.5rem 0 3.5rem;
+  }
 }
 
 .card-container,
 .card-info {
-  display: flex;
+  display: inline-flex;
+  background-color: #fabada;
+}
+
+.card-container {
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    flex-flow: row wrap;
+    width: auto;
+  }
 }
 
 .card-info {
   flex-flow: column nowrap;
   justify-content: center;
-  line-height: 1.8;
-  padding: 0 1.5rem;
+  font-size: .875rem;
+  line-height: 1.2;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .card-info {
+    font-size: 1rem;
+    line-height: 1.8;
+    padding: 1.5rem;
+  }
 }
 
 .card-image {
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .card-image {
+    width: 12rem;
+    height: auto;
+  }
+}
+
+.card-label {
+  font-weight: 800;
+  margin: 0 .5rem 0 0;
 }
 
 .boxed-text {
@@ -43,6 +83,7 @@ p {
 }
 
 .boxed-text {
+  max-width: 23rem;
   margin-bottom: .5rem;
 }
 
@@ -53,15 +94,43 @@ p {
 
 .credit-cards {
   display: flex;
+  flex-flow: row wrap;
 }
 
 .cc-container {
   display: flex;
-  padding: 2rem;
+  width: 100%;
+  border-radius: .5rem;
+  padding: 1.25rem;
+  margin: 0 0 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .cc-container {
+    width: 17.5rem;
+    padding: 2rem;
+    margin: 0 1rem 1rem 0;
+  }
 }
 
 .cc-brand {
-  width: 3.5rem;
-  height: auto;
+  width: auto;
+  height: 1.75rem;
   align-self: flex-end;
+}
+
+.cc-number {
+  font-size: 1.65rem;
+  font-weight: 600;
+  padding: 1.5rem 0;
+  width: 100%;
+}
+
+.cc-info {
+  display: flex;
+  width: 100%;
+}
+
+.cc-expiration {
+  margin-right: 1.5rem;
 }
