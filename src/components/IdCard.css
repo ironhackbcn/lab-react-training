@@ -1,0 +1,22 @@
+.IdCard {
+  display: flex;
+}
+.IdCard img {
+  margin-right: 5px;
+  width: 128px;
+  height: 128px;
+}
+.IdCard p {
+  margin: 0;
+}
+.IdCard span {
+  font-weight: bold;
+}
+.box {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
+}
+br {
+  height: 0;
+}
