@@ -1,0 +1,29 @@
+.CreditCard {
+  width: 325px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.CreditCard-type img {
+  width: 20%;
+}
+
+.CreditCard-type {
+  text-align: end;
+  padding: 12px;
+}
+.CreditCard-number {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.CreditCard-number p {
+  margin: 0 0;
+}
+.Credit-Card-expires p {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+.CreditCard-name p {
+  margin: 0 0 15px 0;
+  padding-left: 20px;
+}
