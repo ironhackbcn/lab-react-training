@@ -1,0 +1,32 @@
+.button {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  margin: 10px 0;
+}
+.info {
+  background-color: #209cee;
+}
+.primary {
+  background-color: #00d1b2;
+}
+.success {
+  background-color: #23d160;
+}
+.warning {
+  background-color: #ffdd57;
+}
+.danger {
+  background-color: #ff3860;
+}
+.lg {
+  width: 40%;
+}
+.md {
+  width: 20%;
+}
+.xs {
+  width: 10%;
+}

@@ -1,0 +1,11 @@
+.card {
+  display: flex;
+  padding: 10px;
+  border: 1px solid black;
+}
+.card .title {
+  font-weight: bold;
+}
+.card .description {
+  padding-left: 10px;
+}
