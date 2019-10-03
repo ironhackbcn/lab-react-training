@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+// import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
+import BoxColor from './components/BoxColor';
 
 class App extends Component {
   render() {
@@ -10,7 +12,6 @@ class App extends Component {
         <h1>Lab-React-Training</h1>
 
         <h2>IdCard</h2>
-        {/* TODO: Use the IdCard component */}
         <div>
           <IdCard
             lastName="Doe"
@@ -31,17 +32,17 @@ class App extends Component {
         </div>
 
         <h2>Greetings</h2>
-        {/* TODO: Use the Greetings component */}
-
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
         <Greetings lang="es">Inés</Greetings>
 
         <h2>Random Number</h2>
-        {/* <Greetings lang="es">Inés</Greetings> */}
-
         <Random min={1} max={6} />
         <Random min={1} max={100} />
+
+        <h2>Box Color</h2>
+        <BoxColor r={255} g={210} b={0} />
+        <BoxColor r={215} g={195} b={210} />
       </div>
     );
   }
