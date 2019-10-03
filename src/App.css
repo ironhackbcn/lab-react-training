@@ -1,0 +1,64 @@
+body {
+  font-size: 16px;
+  background: #fafafa;
+}
+
+.App {
+  padding: 1em;
+  font-size: 1rem;
+  background: #fff;
+  height: 100vh;
+}
+
+/** Card content **/
+.card {
+  border: 1px solid #000;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.card-image {
+  margin-right: 10px;
+}
+
+.card-info {
+  width: 100%;
+}
+
+.card-info p {
+  margin: 0 0 5px;
+  font-size: 1em;
+}
+
+/** Greetings content **/
+.greetings-content,
+.random-content {
+  border: 1px solid #000;
+  padding: 12px;
+  margin-bottom: 1em;
+}
+.greetings-content h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+/** Box color **/
+.box-color {
+  border: 1px solid #000;
+  margin-bottom: 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+/** Credit Card **/
+.credit-card {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.credit-card img {
+  width: 70px;
+  float: right;
+  background-color: #000;
+}
