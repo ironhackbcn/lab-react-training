@@ -18,7 +18,14 @@ class App extends Component {
           birth={new Date("1992-07-14").toDateString()}
           picture="https://randomuser.me/api/portraits/men/44.jpg"
         />
-
+        <IdCard
+          lastName="Delores "
+          firstName="Obrien"
+          gender="female"
+          height={172}
+          birth={new Date("1988-05-11").toDateString()}
+          picture="https://randomuser.me/api/portraits/women/44.jpg"
+        />
         <h1>Greetings</h1>
         {/* TODO: Use the Greetings component */}
         <Greetings lang="de">Ludwig</Greetings>
@@ -36,6 +43,7 @@ class App extends Component {
         <BoxColor r={128} g={255} b={0} />
 
         <h1>Credit card</h1>
+        <div className="App-Credit-Card-show">
         <CreditCard
           type="Visa"
           number="0123456789018845"
@@ -63,10 +71,11 @@ class App extends Component {
           expirationMonth={12}
           expirationYear={2019}
           bank="Name of the Bank"
-          owner="Firstname Lastname"
+          owner="Armando Casitas"
           bgColor="#ddbb55"
           color="white"
         />
+        </div>
       </div>
     );
   }

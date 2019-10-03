@@ -1,0 +1,17 @@
+
+.App-Credit-Card-show{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.App-Credit-Card{
+    width:300px;
+    margin:20px;
+    border-radius:10px;
+    
+}
+
+.App-Credit-Card-type{
+    text-align:right;
+}

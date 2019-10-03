@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './BoxColor.css';
 
 const rgbToHex = (color) => {
   let hex = Number(color).toString(16);
@@ -14,7 +15,7 @@ class BoxColor extends Component {
     const { r, g, b } = this.props;
     const bkcolor = `rgb(${r},${g},${b})`;
     return (
-      <div style={{ backgroundColor: bkcolor }}>
+      <div className="App-BoxColor"style={{ backgroundColor: bkcolor }}>
         <p>
           rgb({r},{g},{b})
         </p>{" "}

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './Greetings.css';
 
 class Greetings extends Component {
   render() {
@@ -22,7 +23,7 @@ class Greetings extends Component {
         break;
     }
     return (
-      <div>
+      <div className="App-Bounder">
         <h2>
           {greet} {children}
         </h2>
