@@ -1,0 +1,12 @@
+.Greetings {
+    width: 50%;
+    border: solid 1px black;
+    margin-bottom: 15px;
+    padding: 5px;
+  }
+  
+.Greetings p {
+    font-size: 25px;
+}
+
+  
