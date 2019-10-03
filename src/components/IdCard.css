@@ -1,22 +1,21 @@
-.App-IdCard{
-    display:flex;
-    flex-direction: row;
-    border: 2px solid black;
-    margin-bottom:20px;
-    align-items: center;
+.App-IdCard {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
-.App-IdCard img{
-    width:128px;
-    height:128px;
-    margin: 5px;
+.App-IdCard img {
+  width: 128px;
+  height: 128px;
+  margin: 5px;
 }
 
 .App-IdCard-text {
-    margin-left:20px;
+  margin-left: 20px;
 }
 
 .App-IdCard-text span {
-    font-weight:bolder;
-   
+  font-weight: bolder;
 }

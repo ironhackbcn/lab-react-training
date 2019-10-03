@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './RandomNumber.css';
+import "./RandomNumber.css";
 
 class RandomNumber extends Component {
   render() {

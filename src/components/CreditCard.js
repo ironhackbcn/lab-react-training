@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './CreditCard.css';
+import "./CreditCard.css";
 
 class CreditCard extends Component {
   render() {
@@ -20,26 +20,23 @@ class CreditCard extends Component {
       >
         <div className="App-Credit-Card-type">
           <img
-            src={
-              type === "Visa"
-                ? "/img/visa.png"
-                : "%PUBLIC%/img/master-card.svg"
-            }
+            src={type === "Visa" ? "/img/visa.png" : "/img/master-card.svg"}
             alt="Credit card type"
           />
         </div>
         <div className="App-Credit-Card-number">
           <p>•••• •••• •••• {number.slice(12, 16)}</p>
         </div>
-        <div className="app-Credit-Card-DataExpire">
+        <div className="App-Credit-Card-DataExpire">
           <p>
             {expirationMonth < 10
               ? `0${expirationMonth}`
               : `${expirationMonth}`}{" "}
-            / {expirationYear.toString().slice(2, 4)} {"    "} {bank}
+            / {expirationYear.toString().slice(2, 4)} {"    "}{" "}
+            <span>{bank}</span>
           </p>
         </div>
-        <div className="app-Credit-Card-Owner">
+        <div className="App-Credit-Card-Owner">
           <p>{owner.toUpperCase()}</p>
         </div>
       </div>

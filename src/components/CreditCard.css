@@ -1,17 +1,41 @@
-
-.App-Credit-Card-show{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content: center;
-}
-.App-Credit-Card{
-    width:300px;
-    margin:20px;
-    border-radius:10px;
-    
+.App-Credit-Card-show {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.App-Credit-Card-type{
-    text-align:right;
+.App-Credit-Card {
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.App-Credit-Card-type {
+  text-align: right;
+}
+
+.App-Credit-Card-type img {
+  width: 32px;
+  margin: 10px;
+}
+
+.App-Credit-Card-number p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.App-Credit-Card-DataExpire p {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.App-Credit-Card-Owner p {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.App-Credit-Card-DataExpire span {
+  text-align: left;
+  margin-left: 20px;
 }
