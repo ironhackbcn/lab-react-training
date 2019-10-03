@@ -1,0 +1,8 @@
+.card-section {
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #bfc12e;
+  color: gray;
+  padding: 15px;
+}

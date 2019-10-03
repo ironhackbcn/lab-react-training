@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './IdCard.css';
 
 class IdCard extends Component {
   render() {
@@ -7,11 +8,11 @@ class IdCard extends Component {
 
     return (
       <div className=" card-section">
-        <div>
+        <div className=" card-img">
           <img src={picture} alt="" />
         </div>
 
-        <div>
+        <div className=" card-info">
           <h4> Last Name: {lastName}</h4>
           <p> First Name: {firstName}</p>
           <p> Gender: {gender}</p>

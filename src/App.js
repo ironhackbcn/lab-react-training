@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import IdCard from './components/IdCard';
+import Greetings from './components/Greetings';
+import Random from './components/Random';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>IdCard</h1>
+        <h1>Lab-React-Training</h1>
+
+        <h2>IdCard</h2>
         {/* TODO: Use the IdCard component */}
         <div>
           <IdCard
@@ -26,8 +30,18 @@ class App extends Component {
           />
         </div>
 
-        <h1>Greetings</h1>
+        <h2>Greetings</h2>
         {/* TODO: Use the Greetings component */}
+
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
+        <Greetings lang="es">Inés</Greetings>
+
+        <h2>Random Number</h2>
+        {/* <Greetings lang="es">Inés</Greetings> */}
+
+        <Random min={1} max={6} />
+        <Random min={1} max={100} />
       </div>
     );
   }
