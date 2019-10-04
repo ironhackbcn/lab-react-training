@@ -1,14 +1,21 @@
-import React, { Component } from 'react';
-import './IdCard.css';
+import React, { Component } from "react";
+import "./IdCard.css";
 
 class IdCard extends Component {
   render() {
-    const { lastName, firstName, gender, height, birth, picture, altPicture } = this.props;
+    const {
+      lastName,
+      firstName,
+      gender,
+      height,
+      birth,
+      picture,
+      altPicture,
+    } = this.props;
     return (
       <div className="card">
         <div>
-          {lastName}
-          <img href={picture} alt={altPicture} />>
+          <img src={picture} />
         </div>
         <div>
           <ul>
