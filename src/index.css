@@ -6,9 +6,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 80%;
+  margin: 0 auto;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.marc{
+  border: 1em;
+  box-sizing: border-box;
+  width: 100%;
+  border: solid #5B6DCD 5px;
+  padding: 5px;
+  margin: 5px;
+  flex: auto;
+  display: flex;
+  flex-direction: row;
 }

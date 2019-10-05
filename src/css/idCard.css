@@ -1,0 +1,19 @@
+.id-card{
+    border: 1em;
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #5B6DCD 5px;
+    padding: 5px;
+    margin: 5px;
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.id-card ul{
+    list-style-type: none;
+}
+
+.id-card ul span{
+    font-weight: bold;
+}
