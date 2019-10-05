@@ -1,0 +1,31 @@
+
+div {
+    display: block;
+}
+
+.CreditCard .number {
+    font-size: 1.9em;
+    text-align: center;
+    margin: 20px 0;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.credit-card{
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.credit-card .number {
+    font-size: 1.9em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.credit-card img {
+    height: 20px;
+}
