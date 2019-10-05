@@ -3,6 +3,26 @@ import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 
 class App extends Component {
+
+  getGreeting(lang){
+    // console.log('holaaaaaaaa: ', lang)
+    const allLang = ["de","en","es","fr"];
+    const allGreetings = ["Hallo", "Hello", "Hola", "Bonjour"];
+    console.log("the posittion: " + allGreetings[allLang.indexOf(lang)]);
+    switch(lang){
+      case 'de':
+        return 'Hallo';
+      case 'fr':
+        return 'Bonjour';
+      case 'en':
+        return 'Hello';
+      case 'es':
+        return 'Hola';
+      default : 
+        return 'noe xx`x'
+    }
+};
+
   render() {
     return (
       <div className="App">
@@ -26,10 +46,19 @@ class App extends Component {
 
         <h1>Greetings</h1>
         {/* TODO: Use the Greetings component */}
-        <Greetings />
+        
+          <Greetings 
+            lang="es" greeting = {this.getGreeting} children="Ludwig"> 
+          </Greetings>
+
+          <Greetings 
+            lang="en" greeting = {this.getGreeting} children="François">
+          </Greetings>
       </div>
     );
   }
 }
 
 export default App;
+
+
