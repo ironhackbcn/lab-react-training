@@ -1,10 +1,10 @@
 import React from "react";
-import "../css/idCard.css";
+import "../css/IdCard.css";
 
 function IdCard(props){
     return(
         <div className="id-card">
-            <div><img src={props.picture}></img></div>
+            <div><img src={props.picture} alt="img-id-card"></img></div>
             <div>
                 <ul>
                     <li><span>First name: </span> {props.firstName}</li>

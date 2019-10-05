@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/greetings.css";
+import "../css/Greetings.css";
 
 function Greetings(props){
     return(
@@ -7,10 +7,6 @@ function Greetings(props){
             <p>
                 {props.greeting(props.lang)} {props.children}
             </p>
-            {/* <ul>
-                <li>{props.lang}</li>
-                <li>Children: {props.children}</li>
-            </ul> */}
         </div>
     );
 }

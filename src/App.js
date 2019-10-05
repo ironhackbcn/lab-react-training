@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
+import Random from './components/Random';
+import BoxColor from './components/BoxColor';
 
 class App extends Component {
 
   getGreeting(lang){
     // console.log('holaaaaaaaa: ', lang)
-    const allLang = ["de","en","es","fr"];
-    const allGreetings = ["Hallo", "Hello", "Hola", "Bonjour"];
-    console.log("the posittion: " + allGreetings[allLang.indexOf(lang)]);
     switch(lang){
       case 'de':
         return 'Hallo';
@@ -54,7 +53,17 @@ class App extends Component {
           <Greetings 
             lang="en" greeting = {this.getGreeting} children="François">
           </Greetings>
+
+        <h1>Random</h1>
+        <Random min={1} max={6}/>
+        <Random min={1} max={100}/>
+        
+        <h1> BoxColor</h1>
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />    
       </div>
+
+
     );
   }
 }
