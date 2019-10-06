@@ -1,0 +1,7 @@
+.App-Boxed {
+  width: 30%;
+  border: 1px deeppink solid;
+  box-shadow: 2px 2px 2px 0  grey;
+  margin: 20px 0;
+  padding-left: 20px;
+}
