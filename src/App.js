@@ -1,41 +1,6 @@
 import React, { Component } from 'react';
-
-const IdCard = props => {
-  console.log(props);
-  const date = props.birth;
-
-  console.log(date);
-
-  return (
-    <div className="id-card">
-      <div className="id-picture">
-        <img src={props.idPicture} alt={props.firstName} />
-      </div>
-      <div className="id-text">
-        <p>
-          <b>First Name: </b>
-          {props.firstName}
-        </p>
-        <p>
-          <b>Last Name: </b>
-          {props.lastName}
-        </p>
-        <p>
-          <b>Gender: </b>
-          {props.gender}
-        </p>
-        <p>
-          <b>Height: </b>
-          {props.height}
-        </p>
-        <p>
-          <b>Birth: </b>
-          {props.birth.toString()}
-        </p>
-      </div>
-    </div>
-  );
-};
+import IdCard from './IdCard';
+import Greetings from './Greetings';
 
 class App extends Component {
   render() {
@@ -59,7 +24,8 @@ class App extends Component {
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />{' '}
         <h1>Greetings</h1>
-        {/* TODO: Use the Greetings component */}
+        <Greetings lang={'de'}>Ludwig</Greetings>
+        <Greetings lang={'es'}>Jorge</Greetings>
       </div>
     );
   }
