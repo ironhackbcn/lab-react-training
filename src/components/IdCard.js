@@ -5,7 +5,7 @@ class IdCard extends Component {
     return (
       <div className="id-card">
         <div className="id-picture">
-          <img src={this.props.idPicture} alt={this.props.firstName} />
+          <img src={this.props.picture} alt={this.props.firstName} />
         </div>
         <div className="id-text">
           <p>

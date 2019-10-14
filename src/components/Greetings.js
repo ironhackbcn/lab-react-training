@@ -6,7 +6,7 @@ class Greetings extends Component {
 
     if (lang === 'de') {
       return (
-        <div class="greeting-box">
+        <div className="greeting-box">
           <p>Hallo {this.props.children}</p>
         </div>
       );
@@ -14,7 +14,7 @@ class Greetings extends Component {
 
     if (lang === 'es') {
       return (
-        <div class="greeting-box">
+        <div className="greeting-box">
           <p>Hola {this.props.children}</p>
         </div>
       );
