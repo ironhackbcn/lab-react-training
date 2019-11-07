@@ -1,7 +1,6 @@
 import React from 'react'
 
 const IdCard = (props) => {
-  console.log(props.birth)
   return (
     <div className="IdCard box">
       <img src={props.picture} alt={props.firstName}></img>

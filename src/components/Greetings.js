@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Greetings = (props) => {
+const Greetings = (props) => {
   const greets = [
     {
       lang: 'de',
@@ -29,3 +29,5 @@ export const Greetings = (props) => {
     </div>
   )
 }
+
+export default Greetings;
