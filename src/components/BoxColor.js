@@ -13,8 +13,8 @@ const BoxColor = (props) => {
 
   return (
     <div className="box tx-center" style={{backgroundColor: 'rgb(' + props.r + ', ' + props.g + ', ' + props.b + ')'}} >
-      <p>rgb({props.r},{props.g},{props.b})</p>
-      <p>{hex}</p>
+      <p><strong>rgb({props.r},{props.g},{props.b})</strong></p>
+      <p><strong>{hex}</strong></p>
     </div>
   )
 }

@@ -1,10 +1,16 @@
 
 .App {
   margin-left: 10px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .IdCard {
   display: flex;
+}
+
+.IdCard img {
+  width: 156px;
 }
 
 .right {
@@ -24,4 +30,28 @@
 
 .tx-center p {
   text-align: center;
+}
+
+.CreditCard {
+  padding: 50px;
+  width: 350px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.CreditCard img {
+  width: 70px;
+}
+
+.number {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.type {
+  text-align: right;
+}
+
+.bank {
+  margin-left: 10px;
 }
