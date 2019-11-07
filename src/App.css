@@ -1,0 +1,18 @@
+.IdCard {
+  display: flex;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right li {
+  list-style-type: none;
+}
+
+.Box {
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px black;
+}
