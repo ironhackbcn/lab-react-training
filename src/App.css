@@ -59,3 +59,31 @@
 .Rating {
   font-size: 3rem;
 }
+
+.DriverCard {
+  background-color: #425cbb;
+  border-radius: 10px;
+  color: #fff;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  align-items: center;
+}
+
+.DriverCard img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+
+.DriverCard h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.ratingCard {
+  font-size: 3rem;
+}
