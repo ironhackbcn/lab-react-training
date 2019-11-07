@@ -21,3 +21,7 @@
   margin-bottom: 10px;
   border: solid 1px black;
 }
+
+.tx-center p {
+  text-align: center;
+}
