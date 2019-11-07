@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import IdCard from './components/IdCard';
 import './App.css';
+import { Greetings } from './components/Greetings';
 
 class App extends Component {
   render() {
@@ -27,7 +28,8 @@ class App extends Component {
         />
 
         <h1>Greetings</h1>
-        {/* TODO: Use the Greetings component */}
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
       </div>
     );
   }

@@ -3,7 +3,7 @@ import React from 'react'
 const IdCard = (props) => {
   console.log(props.birth)
   return (
-    <div className="IdCard Box">
+    <div className="IdCard box">
       <img src={props.picture} alt={props.firstName}></img>
       <ul className="right">
         <li><strong>First name</strong>: {props.firstName}</li>
