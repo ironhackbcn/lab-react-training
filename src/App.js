@@ -4,6 +4,8 @@ import { Grettings } from './data/components/Grettings';
 import { Random } from './data/components/Random';
 import { Color } from './data/components/Color';
 import { CreditCard } from './data/components/CreditCard';
+import { Rating } from './data/components/Rating';
+
 
 
 
@@ -69,6 +71,14 @@ class App extends Component {
                 owner="Noemi Alonso"
                 bgColor="#ddbb55"
                 color="white" />
+
+               <h1>Ratings</h1> 
+                 <Rating>0</Rating>
+                <Rating>1.49</Rating>
+                <Rating>1.5</Rating>
+                <Rating>3</Rating>
+                <Rating>4</Rating>
+                <Rating>5</Rating>
       </div>
     );
   }
