@@ -12,6 +12,7 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
 
 class App extends Component {
   render() {
@@ -119,7 +120,10 @@ class App extends Component {
 
         <h1>Facebook</h1>
         <Facebook />
-        
+
+        <h1>Signup Form</h1>
+        <SignupPage />
+
       </div>
     );
   }

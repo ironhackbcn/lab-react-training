@@ -10,9 +10,41 @@ export default class Facebook extends Component {
     }
   }
 
+  getCountries = () => {
+    let countries = [];
+    for (let i = 0; i < berlinJSON.length; i++) {
+      countries.push(berlinJSON[i].country);
+    }
+    return [...new Set(countries)];
+  }
+
+  listCountries = (country) => {
+    if (country === 'All') {
+      this.setState({
+        berlin: berlinJSON
+      })
+    } else {
+      const countries = berlinJSON.filter(element => {
+        return element.country === country;
+      })
+      this.setState({
+        berlin: countries
+      })
+    }
+  }
+
   render() {
     return (
-      <div className="FacebookProfile">
+      <div>
+        <div>
+          <button className="country-button" onClick={() => this.listCountries('All')}>All</button>
+          {
+            this.getCountries().map((element, index) =>
+              <button key={index} className="country-button" onClick={() => this.listCountries(element)}>{element}</button>
+            )
+          }
+        </div>
+        <div className="FacebookProfile">
         {
           this.state.berlin.map((element, index) =>
             <FacebookProfile
@@ -26,6 +58,8 @@ export default class Facebook extends Component {
           )
         }
       </div>
+      </div>
+      
     )
   }
 }
