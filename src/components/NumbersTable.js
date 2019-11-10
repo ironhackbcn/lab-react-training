@@ -6,7 +6,7 @@ const generateArray = (number) => {
   let color = '';
 
   for (let i = 1; i <= number; i++) {
-    (i % 2 === 0) ? color = "white" : color = 'red';
+    (i % 2 === 0) ? color = "red" : color = 'white';
     arr.push(
       {
         value: i,

@@ -11,6 +11,7 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
 
 class App extends Component {
   render() {
@@ -116,6 +117,9 @@ class App extends Component {
         <h1>NumbersTable</h1>
         <NumbersTable limit={12} />
 
+        <h1>Facebook</h1>
+        <Facebook />
+        
       </div>
     );
   }
