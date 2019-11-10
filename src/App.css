@@ -1,0 +1,122 @@
+
+.App {
+  margin-left: 10px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.IdCard {
+  display: flex;
+}
+
+.IdCard img {
+  width: 156px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right li {
+  list-style-type: none;
+}
+
+.box {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px black;
+}
+
+.tx-center p {
+  text-align: center;
+}
+
+.CreditCard {
+  padding: 50px;
+  width: 350px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.CreditCard img {
+  width: 70px;
+}
+
+.number {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.type {
+  text-align: right;
+}
+
+.bank {
+  margin-left: 10px;
+}
+
+.Rating {
+  font-size: 3rem;
+}
+
+.DriverCard {
+  background-color: #425cbb;
+  border-radius: 10px;
+  color: #fff;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  align-items: center;
+}
+
+.DriverCard img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+
+.DriverCard h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.ratingCard {
+  font-size: 3rem;
+}
+
+.NumbersTable {
+  display: flex;
+}
+
+.NumbersBox {
+  list-style-type: none;
+  border: solid 1px;
+  padding: 30px;
+}
+
+.country-button {
+  border: 0px;
+  border-radius: 10px;
+  background-color: lightblue;
+  padding: 10px;
+  margin: 5px;
+}
+
+.country-button:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+.SignupPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.SignupPage input {
+  padding: 10px;
+  margin: 5px 0px 5px 0px;
+}
