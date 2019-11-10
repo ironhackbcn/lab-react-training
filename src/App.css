@@ -87,3 +87,13 @@
 .ratingCard {
   font-size: 3rem;
 }
+
+.NumbersTable {
+  display: flex;
+}
+
+.NumbersBox {
+  list-style-type: none;
+  border: solid 1px;
+  padding: 30px;
+}
