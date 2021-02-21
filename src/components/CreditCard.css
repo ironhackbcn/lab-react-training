@@ -1,0 +1,12 @@
+.CreditCard {
+  display: flex;
+  border-style: solid;
+  align-items: center;
+  margin: 5px;
+  justify-content: space-between;
+}
+
+.CreditCard-pic {
+  border-radius: 8px;
+  max-width: 10%;
+}

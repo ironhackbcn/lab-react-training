@@ -1,0 +1,11 @@
+.IdCard {
+  display: flex;
+  border-style: solid;
+  align-items: center;
+  margin: 5px;
+}
+
+.IdCard-pic {
+  margin-left: 10px;
+  margin-right: 10px;
+}
